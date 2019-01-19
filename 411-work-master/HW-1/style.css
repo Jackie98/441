@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("imgs/Tulips.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 250;
+}
+
+
+.description {
+    margin: 25vh auto;
+    padding: 1em;
+    text-align: center;
+    width: 75%;
+    min-width: 250px;
+    background-color: rgba(155, 226, 154, 0.8)
+}
+
+
+.menu-group-container {
+    margin: 25vh auto;
+    padding: 1em;
+    text-align: center;
+    width: 75%;
+    min-width: 250px;
+    background-color: rgba(246, 233, 86, 0.8)
+}
+
+@media (max-width: 700px) {
+    .description-container {
+        font-size: 1.5em;
+    }
+}
+.hero {
+  //Hero Image Rules//
+
+    height: 200vh;
+    min-height: 800px;
+    background-image: url("imgs/Jackie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+}
+
+.hero .title {
+    font-size: 22pt;
+    color: #fff;
+    float: center;
+    margin-top: 0px;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(225, 148, 235, 0.7);
+}
+
+.title h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.0em;
+}
+
+.title h2 {
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 150;
+    font-style: italic;
+    line-height: 0.2em;
+}
+
+.hero .nav {
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 1em;
+    font-size: 1.0em;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .nav-item {
+  font-family: 'Thasadith', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 1em;
+  font-size: 1.0em;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .nav-item:hover {
+    color: #fff;
+    background-color: rgba(87, 0, 119, 0.5);
+}
+
+.menu h1 {
+    font-family: 'Thasadith', sans-serif;
+}
+
+.menu .menu-group-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-around;
