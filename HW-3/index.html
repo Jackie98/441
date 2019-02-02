@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Enlightenment or Illusion?</title>
+        <style>body{background-color: purple;}</style>
+        <script>
+           function doSomething()
+           {
+               document.write("-Listen to Voice");
+           }
+       </script>
+    </head>
+    <body>
+      <img src="imgs/dream.jpg">
+        <div id="changeme">Update me</div>
+
+        <script>
+        document.getElementById("changeme").innerHTML ="<h1>The Waking Dream</h1>";
+        document.write("Hello, Traveler:You have just been rudely awoken from your deep, peaceful slumber by an ethereal voice that seems to have emanated from within you. Will you choose to answer its call to embodied enlightment, or will you return to finish your indulgent dream?");
+
+
+    </script>
+    <div id="changeme"></div>
+    <script>
+      doSomething();
+      </script>
+    </body>
+</html>
