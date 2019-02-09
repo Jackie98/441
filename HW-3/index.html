@@ -3,25 +3,69 @@
         <title>Enlightenment or Illusion?</title>
         <style>body{background-color: purple;}</style>
         <script>
-           function doSomething()
-           {
-               document.write("-Listen to Voice");
-           }
+           function getChoice1()
+       {
+           var myChoice = document.getElementById("choice").value;
+           var myQuestion = document.getElementById("question");
+           
+             if(myChoice === "Awaken")
+              {
+               myQuestion.innerHTML = "Although difficult, that was a good choice. The voice tells you to go outside to the garden. Will you stay or go?";
+             }
+             else if(myChoice === "Sleep")
+             {
+               document.getElementById("choice").style.display"none";
+               document.getElementById("btnSubmit").style.display="none";
+
+               document.getElementById("choice2").style.display"block";
+               document.getElementById("btnSubmit2").style.display="block";
+               myQuestion.innerHTML = "You chose to sleep, but the voice is now in your head. Do you listen or get earplugs?";
+             }
+             else
+               {
+                 myQuestion.innerHTML = "Invalid Answer."
+               }
+             }
+             function getChoice2()
+             {
+               var myQuestion = document.getElementById("question");
+               var go = document.getElementById("choice2").value;
+               if ( === "go")
+               {
+                 myQuestion.innerHTML = "You are quite adventurous. You see someone by a tree. Do you approach them?";
+               }
+               else if (stay ===)
+               {
+                 myQuestion.innerHTML = "You are a little lazy. Enjoy your eternal slumber!";
+             }
+}
+
        </script>
     </head>
     <body>
       <img src="imgs/dream.jpg">
-        <div id="changeme">Update me</div>
+      <h1> The Waking Dream</h2>
+        <br>
+        <div id="question">
+          <br>
+          You are awakened from a deep slumber by a seemingly ethereal, disembodied voice. Do you awaken and listen for more, or roll over and continue your nocturnal dream?
+        </div>
+        <br>
+        <input id="choice" type="text" size="30"
+        value="Enter Awaken or Sleep">
+        <button id="btnSubmit" onclick="getChoice1();">
+          Click to Continue</button>
 
-        <script>
-        document.getElementById("changeme").innerHTML ="<h1>The Waking Dream</h1>";
-        document.write("Hello, Traveler:You have just been rudely awoken from your deep, peaceful slumber by an ethereal voice that seems to have emanated from within you. Will you choose to answer its call to embodied enlightment, or will you return to finish your indulgent dream?");
+          <input id="choice2" type="text" size="30"
+          value="Enter Stay or Go" style="display:none">
+          <button id="btnSubmit2" onclick="getChoice2();" style="display:none">
+            Click to Continue</button>
+
+            <input id="choice3" type="text" size="30"
+            value="Enter Listen or Ignore" style="display:none">
+            <button id="btnSubmit3" onclick="getChoice3();" style="display:none">
+              Click to Continue</button>
 
 
-    </script>
-    <div id="changeme"></div>
-    <script>
-      doSomething();
-      </script>
-    </body>
-</html>
+        </body>
+      </html>
