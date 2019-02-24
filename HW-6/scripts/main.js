@@ -1,13 +1,10 @@
-var imageNames = ["image1", "image2", "image3", "image4", "image 5", "image 6"];
+var imageNames = ["image1", "image2", "image3", "image4", "image 5", "image 6", "image 7", "image 8", "image 9", "image 10", "image 11", "image 12"];
 var blankImagePath = "imgs/gofish.png";
 var firstNumber = -1;
 var secondNumber = -1;
 
 //JSON declaration
-var player = {"firstname":"", "lastname":""};
-var actualImages = new Array();
-
-var player = {"age":""};
+var player = {"firstname":"", "lastname":"", "age":""};
 var actualImages = new Array();
 
 
@@ -19,7 +16,7 @@ function printBlanks()
     for(var i = 0; i < imageNames.length; i++)
     {
     // iterate through the image tag ids and sets the source
-        document.getElementById(imageTags[i]).src= blankImagePath;
+        document.getElementById(imageNames[i]).src= blankImagePath;
     }
 
 
@@ -31,9 +28,9 @@ function createRandomImageArray()
     // create an array of actual images
     var actualImagePath = ["imgs/sun.jpg", "imgs/moon.jpg", "imgs/venus.jpg", "imgs/mars.jpg"];
     // create another array to make sure the images only get added twice
-    var count = [0,0];
+    var count = [0,0,0,0,0,0,0,0,0,0,0,0];
     // create a while statement to check to see if our actual image array is full
-    while(actualImages.length < 4)
+    while(actualImages.length < 12)
     {
         // get a random number between 0 and the number total number of images that we can choose from
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
