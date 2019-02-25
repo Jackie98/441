@@ -7,7 +7,7 @@ var secondNumber = -1;
 //JSON declaration
 var player = {"firstname":"", "lastname":"", "age":""};
 var actualImages = new Array();
-var player = {"firstname":"", "lastname":"", "age":"", "number of guesses":""};
+var player = {"number of guesses":"", "firstname":"", "lastname":"", "age":"",};
 var actualImages = new Array();
 
 
@@ -101,7 +101,13 @@ function addToPlayer()
     //console.log(firstName);
     player.firstname = firstName;
     localStorage.setItem("playerInfo", JSON.stringify(player));
-    window.location = "HW6Final.html";
+    window.location = "HW6Game.html";
+
+
+    var numberofGuesses = document.getElementById("txtnumberofGuesses").value;
+    player.numberofguesses = numberofGuesses;
+    localStorage.setItem("information", JSON.stringify(player));
+    window.location = "HW6Final.html"
 }
 
 // get the information out of JSON
@@ -110,6 +116,10 @@ function playerInfo()
     var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
     console.log(player.firstname);
+
+    var playerInformation = localStorage.getItem("information");
+    player = JSON.parse(playerInformation);
+    console.log(player.numberofguesses);
 
 
 }

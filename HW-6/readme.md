@@ -1,16 +1,15 @@
-## Week 5 Homework Readme Document
+## Week 6 Homework Readme Document
 Jacqueline Evans-Shaw
+---
 
 # Work Process
 ---
-This week's work process went by much more smoothly! I really appreciated the tutorial video, as it helped me follow the steps exactly--and since I'm a visual and hands-on learner, this cemented a lot of the coding concepts for me that I had previously learned but not fully understood.
-I was also able to check in with classmates to ensure that my code was functional and that everything was being displayed properly and that I understood the concepts.
-We each had a lot of fun designing our games.
-
-# Issues
----
-I only experienced a minor issue of my images not showing up because I named them incorrectly! A good lesson in attention to detail.
+This week's assignment had me struggling a bit. I was able to assemble my first information page and connect it to the game page, however after that, I think I became lost in the JSON information, and I wasn't able to completely print out the results onto a final page. I worked a bit with the prof and a classmate as well (who was equally stumped), but in the end, I had to cut my work process short because I realized I wasn't understanding enough to successfully finish the assignment.
 
 # Successes
 ---
-I originall learned about arrays in Coding 101, but truthfully, the practice of using them didn't stick well with me and I avoided them. After this assignment, I feel I was successful in grasping the concept of their usefulness and successfully applied it to my own work, which made me feel like I was actually competent with coding! Thanks a lot for the great tutorial videos, and thanks for reading!
+On the one hand, I was able to connect my beginning page that gathered the player's information to my game page, which I was proud of. I was also able to add more content to my game (with a little bit of help!)
+
+# Issues
+---
+On the other hand, I wasn't able to fully print my game's results on my final page, although I did spend quite a bit of time trying out different things with my Page 1 and Page 2 with the help of the Prof. I went back and re-watched and re-read the tutorials, but nothing seemed to work, so I unfortunately had to call it a day and move on. I'd greatly appreciate any feedback detailing what went wrong with my code, and how I can improve it in the future. Thanks for reading!

@@ -6,14 +6,18 @@
         <script>
             function getInformation()
             {
-                var information = {"firstname":"", "lastname":"", "age":"", "number of guesses":""};
-                document.getElementById("info").innerHTML = information.firstname + ":" + information.lastname + ":" + information.numberofguesses + ":"};
+                var firstName =
+                document.getElementById("txtFirstName").innerHTML = information.firstname = firstName;
+                localStorage.setItem("playerInfo", JSON.stringify(information));
+
+                var numberofGuesses =
+                document.getElementById("txtnumberofGuesses").innerHTML = information.numberofguesses = numberofGuesses;
                 localStorage.setItem("information", JSON.stringify(information));
             }
 
-            function goNextPage()
+            function goNextPage();
             {
-                window.location = "Page2.html";
+                window.location = "HW6Game.html";
             }
         </script>
     </head>
