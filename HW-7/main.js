@@ -1,5 +1,6 @@
 var myViewFinderArray = new Array();
 
+
 class ViewFinder
 {
     constructor(title, year, description, imagePath, author)
@@ -19,7 +20,7 @@ class ViewFinder
         return "Image :" + this.imagePath;
         return "Author :" + this.author;
     }
-  }
+
 
     get theTitle()
     {
@@ -44,25 +45,27 @@ class ViewFinder
     {
       return this.author;
     }
+}
 
 
-
-function initializeArray()
+function initializeArray();
 {
     var myViewFinder = new ViewFinder("Sky and Pilot Romance");
     var myViewFinder1 = new ViewFinder("2005");
+    var myViewFinder2 = new ViewFinder("A painting of the sky falling in love with a pilot");
+    var myViewFinder3 = new ViewFinder();
+    var myViewFinder4 = new ViewFinder("Chiara Bautista");
     myViewFinderArray.push(myViewFinder);
     myViewFinderArray.push(myViewFinder1);
+    myViewFinderArray.push(myViewFinder2);
+    myViewFinderArray.push(myViewFinder3);
+    myViewFinderArray.push(myViewFinder4);
+}
 
 }
-function accessInformation()
+function accessInformation();
 {
-    /// random object from the array
-    function getARandomNumber(min, max)
-      {
-          return Math.floor(Math.random() * (max - min + 1) ) + min;
-      }
-      document.write(getARandomNumber(0,4));
+
     //console.log(myViewFinder.toString());
     //console.log(myViewFinder.theTitle);
     document.getElementById("title").innerHTML = myViewFinderArray[0].toString();
@@ -70,3 +73,12 @@ function accessInformation()
     document.getElementById("description").innerHTML = myViewFinderArray[2].toString();
     document.getElementById("imagePath").innerHTML = myViewFinderArray[3].tostring();
     document.getElementById("author").innerHTML = myViewFinderArray[4].tostring();
+
+}
+
+function getARandomNumber(min, max)
+  {
+      return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+  document.write(getARandomNumber(0,4));
+}
