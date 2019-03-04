@@ -1,84 +1,55 @@
 var myViewFinderArray = new Array();
 
+var artImg = ['imgs/chiarabautistasky.jpg', 'imgs/Chrysanthemum.jpg', 'imgs/Desert.jpg', 'imgs/Hydrangeas.jpg', 'imgs/cabin.jpg',];
+
+
 
 class ViewFinder
 {
-    constructor(title, year, description, imagePath, author)
+    constructor(title, author, year, description)
     {
-        this.title = title;
-        this.year = year;
-        this.description = description;
-        this.imagepath = imagePath;
-        this.author = author;
-    }
-
-    toString()
-    {
-        return "Title: " + this.title;
-        return "Year: " + this.year;
-        return "Description :" + this.description;
-        return "Image :" + this.imagePath;
-        return "Author :" + this.author;
-    }
-
-
-    get theTitle()
-    {
-        return this.title;
+        this.Title = Title;
+        this.Author = Author;
+        this.Year = Year;
+        this.Description = Description;
 
     }
 
-    get theYear()
-    {
-    return this.year;
+    toStringTitle(){
+  		return this.Title;
+  	}
+  	toStringAuthor(){
+  		return "Artist: " + this.Author;
+  	}
+  	toStringYear(){
+  		return "Year: " + this.Year;
+  	}
+  	toStringDescription(){
+  		return "Description: " + this.Description;
+  	}
+  }
+
+
+function initializeArray()
+{
+    var myViewFinder0 = new ViewFinder("Sky and Pilot Romance", "2006", "A painting of the SKy falling in love with a pilot");
+    var myViewFinder1 = new ViewFinder("Chrysanthemum", "2003", "A beautiful photo of a Chrysanthemum");
+    var myViewFinder2 = new ViewFinder("Desert", "2010", "A lovely depiction of some faraway desert");
+    var myViewFinder3 = new ViewFinder("Hydrangeas", "2013", "A handful of sweet hydrangea flowers");
+    var myViewFinder4 = new ViewFinder("Cabin", "2017", "A secret hideout in the woods");
+
+    myViewFinderArray.push(myViewFinder0, myViewFinder1, myViewFinder2, myViewFinder3, myViewFinder4);
+
+}
+
+function accessInformation() {
+  var x = Math.floor((Math.random() * 5) +1 );
+
+      document.getElementById("Artwork").src= artImg[x];
+      document.getElementById("Title").innerHTML = myViewFinderArray[x].toStringTitle();
+  	document.getElementById("Author").innerHTML = myViewFinderArray[x].toStringAuthor();
+  	document.getElementById("Year").innerHTML = myViewFinderArray[x].toStringYear();
+  	document.getElementById("Description").innerHTML = myViewFinderArray[x].toStringDescription();
 
   }
-    get theDescription()
-    {
-      return this.description;
-    }
-    get theImage()
-    {
-      return this.imagePath;
-    }
-    get theAuthor()
-    {
-      return this.author;
-    }
-}
-
-
-function initializeArray();
-{
-    var myViewFinder = new ViewFinder("Sky and Pilot Romance");
-    var myViewFinder1 = new ViewFinder("2005");
-    var myViewFinder2 = new ViewFinder("A painting of the sky falling in love with a pilot");
-    var myViewFinder3 = new ViewFinder();
-    var myViewFinder4 = new ViewFinder("Chiara Bautista");
-    myViewFinderArray.push(myViewFinder);
-    myViewFinderArray.push(myViewFinder1);
-    myViewFinderArray.push(myViewFinder2);
-    myViewFinderArray.push(myViewFinder3);
-    myViewFinderArray.push(myViewFinder4);
-}
-
-}
-function accessInformation();
-{
-
-    //console.log(myViewFinder.toString());
-    //console.log(myViewFinder.theTitle);
-    document.getElementById("title").innerHTML = myViewFinderArray[0].toString();
-    document.getElementById("year").innerHTML = myViewFinderArray[1].toString();
-    document.getElementById("description").innerHTML = myViewFinderArray[2].toString();
-    document.getElementById("imagePath").innerHTML = myViewFinderArray[3].tostring();
-    document.getElementById("author").innerHTML = myViewFinderArray[4].tostring();
-
-}
-
-function getARandomNumber(min, max)
-  {
-      return Math.floor(Math.random() * (max - min + 1) ) + min;
-  }
-  document.write(getARandomNumber(0,4));
 }
