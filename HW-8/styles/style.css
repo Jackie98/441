@@ -1,0 +1,37 @@
+
+body {
+  background-color: yellow;
+}
+
+#square1{
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  left: 500px;
+  top: 450px;
+}
+
+#square2{
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  left: 200px;
+  top: 250px;
+}
+
+#square3{
+  width: 150px;
+  height: 150px;
+  background: green;
+  position: absolute;
+  left: 300px;
+  top: 350px;
+}
+
+#moveSquare {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
