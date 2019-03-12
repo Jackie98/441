@@ -1,4 +1,4 @@
-// Image class
+// Declare the image class
 var imageArray = new Array();
 
 class Images {
