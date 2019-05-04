@@ -1,16 +1,12 @@
-## Week 5 Homework Readme Document
+## FINAL Readme Document!
 Jacqueline Evans-Shaw
 
-# Work Process
+# The Final Product :)
 ---
-This week's work process went by much more smoothly! I really appreciated the tutorial video, as it helped me follow the steps exactly--and since I'm a visual and hands-on learner, this cemented a lot of the coding concepts for me that I had previously learned but not fully understood.
-I was also able to check in with classmates to ensure that my code was functional and that everything was being displayed properly and that I understood the concepts.
-We each had a lot of fun designing our games.
 
-# Issues
----
-I only experienced a minor issue of my images not showing up because I named them incorrectly! A good lesson in attention to detail.
+My goal with this project was rather ambitious for my coding skillset. I intended to make a memory-matching game where the player would hover over the cards and music would play, prompting the player to then match the song to the lyrics.
+I initially struggled with this, because I wanted to revamp our original matching game from Homework 5. I was able to do this with the addition of a 3D flipping effect, which I very much liked. After completing that, I struggled with how I wanted to prompt audio when the card flipped. This proved to be more difficult and time-consuming than I expected, so instead I coded an audio player to cue the sound byte when it was played. In the end, I accomplished my task of playing music with the cards, even if it was with a different method.
 
-# Successes
----
-I originall learned about arrays in Coding 101, but truthfully, the practice of using them didn't stick well with me and I avoided them. After this assignment, I feel I was successful in grasping the concept of their usefulness and successfully applied it to my own work, which made me feel like I was actually competent with coding! Thanks a lot for the great tutorial videos, and thanks for reading!
+I only wish I had spent more time to construct more cards and tunes, and maybe tweak the design of the game to make it more visually appealing, but overall I'm satisfied with how it turned out after struggling through it. In all honesty, I challenged myself quite a bit with this, but also learned what I do and still don't know about coding, and also how satisfying it is to make a complete and functional project.
+
+Thank you so much for an enriching semester!

@@ -2,64 +2,33 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.flip-card {
-  background-color: transparent;
-  align: right;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  align: right;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  align: right;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-  align: right;
-  z-index: 1;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
 
 <center> <h1><font color="red">WHAT'S THAT SONG?</font></h1></center>
 <center> <h3><font color="black">Hover over the image below to match the song title to its lyrics:</font></h3></center>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="imgs/gofish.png" style="width:300px;height:300px;">
+ <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+              <!--row 1  -->
+
+
+<div class="divTableCell">
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgs/gofish.png" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+      <img src="imgs/impalalyrics.jpg" style="width:300px;height:300px;">
+      </div>
     </div>
-    <div class="flip-card-back">
-    <img src="imgs/impala.jpg" style="width:300px;height:300px;">
   </div>
-  </div>
+
 </div>
-</div>
+<div class="divTableCell">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -71,17 +40,41 @@ body {
   </div>
 </div>
 </div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="imgs/gofish.png" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-    <img src="imgs/impalalyrics.jpg" style="width:300px;height:300px;">
+<div class="divTableCell">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgs/gofish.png" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+      <img src="imgs/godsplanlyrics.jpg" style="width:300px;height:300px;">
+      </div>
     </div>
   </div>
 </div>
 </div>
+
+<!--row 2 -->
+
+<div class="divTableRow">
+<div class="divTableCell">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgs/gofish.png" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+      <img src="imgs/impala.jpg" style="width:300px;height:300px;">
+      <audio controls>
+        <source src="music/Impala.mp3" controls="controls">
+              </audio>
+              <br>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="divTableCell">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -89,31 +82,38 @@ body {
     </div>
     <div class="flip-card-back">
     <img src="imgs/godsplan.jpg" style="width:300px;height:300px;">
+    <audio controls>
+      <source src="music/God's Plan.mp3" controls="controls">
+            </audio>
+            <br>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="divTableCell">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imgs/gofish.png" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+      <img src="imgs/queenofpeace.jpg" style="width:300px;height:300px;">
+      <audio controls>
+        <source src="music/QueenofPeace.mp3" controls="controls">
+              </audio>
+              <br>
+      </div>
     </div>
   </div>
 </div>
 </div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="imgs/gofish.png" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-    <img src="imgs/queenofpeace.jpg" style="width:300px;height:300px;">
-    </div>
-  </div>
 </div>
 </div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="imgs/gofish.png" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-    <img src="imgs/godsplanlyrics.jpg" style="width:300px;height:300px;">
-    </div>
-  </div>
-</div>
-</div>
+
+
+
+
+
+
 </body>
 </html>
